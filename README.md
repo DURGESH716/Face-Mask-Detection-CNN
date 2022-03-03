@@ -4,11 +4,11 @@
 ### Problem Statement and Business Case:-
 As Predicted by scientists, many new deadly diseases will be born in the next 10 years. Just like Coronavirus disease (COVID-19), the best thing to do with these diseases is to take precaution, use sanitizer and use face masks.Wearing a face mask will help prevent the spread of infection and prevent the individual from contracting any airborne infectious germs. When someone coughs, talks, sneezes they could release germs into the air that may infect others.
 
-But the main problem is that people dont take seriously, that how important the mask is. So, to deal with such a problem, A Machine Learning Model has been made which detects people wearing mask or not within seconds, even in the highly crowded people
+But the main problem is that people dont take seriously, that how important the mask is. So, to deal with such a problem, A Machine Learning Model has been made which detects people wearing mask or not within seconds, even in the highly crowded public places. Nowadays, wearing a mask is a must, so in every organization, As camera is placed in every organization,  so the model will flag people who didnt wear mask and will give red signal for culprits. and allow people who wears mask.
 
 ### Pre-Requisites / Technologies Used:-
-- Python Programming Language (Intermediate), Statistics, Probability and Naive Bayes Theoram 
-- Libraries: NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn and nltk (natural language toolkit)
+- Python Programming Language (Intermediate), Deep Learning basic knowledge of CNN
+- Libraries: NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn and tensorflow 
 
 ### Step_1: Dataset Cleaning and Data Exploration:-
 - Dealing with null values and missing values like is.na() to check them

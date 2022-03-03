@@ -7,23 +7,24 @@ As Predicted by scientists, many new deadly diseases will be born in the next 10
 But the main problem is that people dont take seriously, that how important the mask is. So, to deal with such a problem, A Machine Learning Model has been made which detects people wearing mask or not within seconds, even in the highly crowded public places. Nowadays, wearing a mask is a must, so in every organization, As camera is placed in every organization,  so the model will flag people who didnt wear mask and will give red signal for culprits. and allow people who wears mask.
 
 ### Pre-Requisites / Technologies Used:-
-- Python Programming Language (Intermediate), Deep Learning basic knowledge of CNN
-- Libraries: NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn and tensorflow 
+- Python Programming Language (Intermediate), Deep Learning basic knowledge of CNN and Machine Learning
+- Libraries: NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, OpenCV and tensorflow 
 
-### Step_1: Dataset Cleaning and Data Exploration:-
-- Dealing with null values and missing values like is.na() to check them
-- Using functions to get familiar with data like info(), describe()
+### Step_1: Data Pre-Processing of model :-
+- Creating a dataset of 500 images of each with and without mask.
+- Data Cleaning and transformation of data to similar size of 100x100 px.
+- Converting BGR [Blue Green Red] to Grayscale method [Black & White]
 - Visualizing data using graphs like histogram, count-plot, etc.
 
-### Step_2: Data Pre-Processing:-
-- Removing Punctuations (!"#$%&\'{|}~) and Stop-Words (who, whom, which, and, is, etc.)
-- Performing Tokenization (Vectorization): "Process of converting words into small pieces of useful strings"
+### Step_2: Training the Model:-
+- We train the Model using CNN Convolutional Neural Network to build the model
+- Used pooling layer, conv2d and other sequential layers to train the model with 64 neurons.
+- Then performing hyper-parameter tuning to the model.
 
-### Step_3: Training and Measuring the Model:-
-- Splitting the dataset into two parts: Training (80% data) and testing (20% data)
-- Now, train the model using Multinomial Naive Bayes Classifier
+### Step_3: Testing and Measuring the performance of the model:-
+- Splitting the dataset into three parts: Training (80% data) and testing (20% data)
+- Now, train the model using CNN Deep Learning Model
 - Achived Accuracy of 0.94 (94%) on testing dataset 
-- Used Confusion Matrix:"Compares true value with predicted value"
 
 
 #### **Show 💗 by ⭐ My Repository**

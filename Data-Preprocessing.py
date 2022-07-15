@@ -1,4 +1,4 @@
-# Data Pre-Processing
+# Data Pre-Processing: Used for preparing the data before proceeding for analysis and training
 
 import cv2
 import os
@@ -44,7 +44,8 @@ target=np.array(target)
 from keras.utils import np_utils
 
 new_target=np_utils.to_categorical(target)     
-new_target# reshaping images into 100 x 100 px sizes
+new_target
+# reshaping images into 100 x 100 px sizes
 
 np.save('data',data)                           
 np.save('target',new_target)     # saving 'data' & 'target' arrays

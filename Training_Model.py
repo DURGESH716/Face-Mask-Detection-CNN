@@ -34,14 +34,14 @@ model.add(Dense(2,activation='softmax'))
 
 model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
 
+# Using sklearn library for training and testing data split
 from sklearn.model_selection import train_test_split
-
 train_data,test_data,train_target,test_target=train_test_split(data,target,test_size=0.1)
 
 checkpoint = ModelCheckpoint('model-{epoch:03d}.model',monitor='val_loss',verbose=0,save_best_only=True,mode='auto')
 history=model.fit(train_data,train_target,epochs=20,callbacks=[checkpoint],validation_split=0.2)
 
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 
 plt.plot(history.history['loss'],'r',label='training loss')
 plt.plot(history.history['val_loss'],label='validation loss')
